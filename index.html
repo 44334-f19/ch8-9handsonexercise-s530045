@@ -1,13 +1,83 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Walters Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
-		
+            table {margin: auto;
+                   border: 5px solid #000;
+                   border-spacing: 0px;}
+		  #wrapper {display: flex;
+                    flex-direction: row;}
 		</style>
 	</head> 
-<body> 
-
-</body> 
+    <body> 
+        <table>
+            <caption>Derek's Favorite Movie</caption>
+            <thead>
+                <tr>
+                    <th>Title:</th>
+                    <th>Blade Runner 2049</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Director:</td>
+                    <td>Denis Villeneuve</td>
+                </tr>
+                <tr>
+                    <td>Lead Actor:</td>
+                    <td>Ryan Gosling</td>
+                </tr>
+                <tr>
+                    <td>Rating:</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td>A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.</td>
+                </tr>
+                <tr>
+                    <td>Review:</td>
+                    <td><a href="https://www.youtube.com/watch?v=6IcLnerkEZo">Movies With Mikey's Review of the film.</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+            <div id="wrapper">
+                <fieldset id="personalInfo">
+                    <legend>Stuff to Type</legend>
+                    <lable for="myName">Name</lable><br>
+                    <input type="text" name="myName" id="myName" placeholder="your first and last name"><br>
+                    <lable for="myEmail">E-mail</lable><br>
+                    <input type="text" name="myEmail" id="myEmail" placeholder="you@yourdomain.com"><br>
+                    <label for="typing">More Stuff to Type</label><br>
+                    <textarea name="myComments" id="myComments" rows="3" cols="60"></textarea>
+                </fieldset>
+                <fieldset id="stuInfoCol1">
+                    <legend>Stuff to Click on</legend>
+                    Select A button:<br>
+                    <input type="radio" name="button" id="rb1" value="Button 1">Option 1<br>
+                    <input type="radio" name=" button" id="rb2" value="Button 2">Option 2<br>
+                    <input type="radio" name="button" id="rb3" value="Button 3">Option 3<br><br>
+                    Select One or More Buttons<br>
+                    <input type="checkbox" name="box" id="cb1" value="Box 1">Option 1<br>
+                    <input type="checkbox" name="box" id="cb2" value="Box 2">Option 2<br>
+                    <input type="checkbox" name="box" id="cb3" value="Box 3">Option 3<br>
+                </fieldset>
+                <fieldset id="numbersSelect">
+                    <label>Select a Number</label><br>
+                    <select size="3" name="numbers" id="numbers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select><br>
+                    <input id="mySubmit" type="submit" vaue="submit"><br>
+                    <input id="myReset" type="reset" value="reset">
+                </fieldset>
+            </div>
+        </form>
+    </body> 
+    <footer>Derek Walters s530045@nwmissouri.edu</footer>
 </html> 
